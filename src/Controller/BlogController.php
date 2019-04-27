@@ -21,6 +21,17 @@ class BlogController extends AbstractController
             ]
         );
     }
+
+    public function show($slug)
+    { 
+
+        return $this->render('blog/show.html.twig', [
+            'slug' => $slug,
+            ]
+        );
+    }
+
+
 }
 
 ?>
